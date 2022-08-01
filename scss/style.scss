@@ -4,10 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 $basic-gold: rgb(191,150,71);
 $small-font: 18px;
 $medium-font: 22px;
 $big-font: 30px;
+
 @mixin font-add{
   padding-left: 70px;
   font-weight: normal;
@@ -18,6 +20,7 @@ $big-font: 30px;
   max-width: 80%;
   margin: 0 auto;
 }
+
 .print-area{
   width: 80%;
   margin: 20px auto;
@@ -31,6 +34,7 @@ $big-font: 30px;
     position: relative;
   }
 }
+
 .header{
   img{
     width: 200px;
@@ -52,6 +56,7 @@ $big-font: 30px;
     }
   }
 }
+
 .header-text{
   color: $basic-gold;
   width: 60%;
@@ -76,6 +81,7 @@ $big-font: 30px;
   display: flex;
   flex-wrap: wrap;
 }
+
 .left-area{
   width:30%;
   background-color: rgb(65,65,65);
@@ -91,7 +97,8 @@ $big-font: 30px;
     padding: 0 30px;
   }
 }
-.contact {
+
+.contact{
   h4 {
     font-size: $big-font;
     font-weight: normal;
@@ -110,9 +117,11 @@ $big-font: 30px;
     padding-left: 24px;
   }
 }
+
 .skills{
   margin-top: 30px;
   padding: 0 30px;
+
   h1{
     font-size: $big-font;
     font-weight: normal;
@@ -128,6 +137,7 @@ $big-font: 30px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px 10px;
   padding: 0 20px;
+
   p{
     font-size:$small-font;
     font-weight: bold;
@@ -181,17 +191,18 @@ $big-font: 30px;
   padding:50px;
   background-color: white;
 
-  h1{
+  h1 {
     font-size: $big-font;
     font-weight: normal;
-  }
-  h1 span{
-    margin-right: 30px;
-    font-size: 50px;
-    color:lightgray;
+
+    span {
+      margin-right: 30px;
+      font-size: 50px;
+      color: lightgray;
+    }
   }
 
-   p{
+  p{
     @include font-add;
     text-align: justify;
     word-break: break-all;
@@ -249,7 +260,7 @@ $big-font: 30px;
 
   span{
     position: absolute;
-    top:10px;
+    top: 10px;
     right: 0;
     color: black;
     font-weight: normal;
