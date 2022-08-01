@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$basic-gold: rgb(191,150,71);
+$small-font: 18px;
+$medium-font: 22px;
+$big-font: 30px;
+@mixin font-add{
+  padding-left: 70px;
+  font-weight: normal;
+}
+
+.body-wrapper{
+  background: url("/img/background.jpg");
+  max-width: 80%;
+  margin: 0 auto;
+}
+.print-area{
+  width: 80%;
+  margin: 20px auto;
+
+  .header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(41,41,39);
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}
+.header{
+  img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    border: 3px solid $basic-gold;
+    box-shadow: 3px 3px 10px gray;
+    cursor: pointer;
+    user-select: none;
+    filter: grayscale(100%);
+
+    &:hover{
+      filter: grayscale(0%);
+      transform: scale(1.05);
+      box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+    }
+  }
+}
+.header-text{
+  color: $basic-gold;
+  width: 60%;
+  margin-left: auto;
+
+  h1{
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  p{
+    color: white;
+    font-size: $small-font;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-area{
+  width:30%;
+  background-color: rgb(65,65,65);
+  color: white;
+  text-align: left;
+  padding-bottom: 20px;
+
+  i{
+    color: $basic-gold;
+  }
+  .contact{
+    margin-top: 130px;
+    padding: 0 30px;
+  }
+}
+.contact {
+  h4 {
+    font-size: $big-font;
+    font-weight: normal;
+    margin: 20px 0;
+    padding-left: 15px;
+    background-color: $basic-gold;
+  }
+
+  h5 {
+    font-size: $small-font;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: $small-font;
+    padding-left: 24px;
+  }
+}
+.skills{
+  margin-top: 30px;
+  padding: 0 30px;
+  h1{
+    font-size: $big-font;
+    font-weight: normal;
+    margin: 20px 0;
+    padding-left: 15px;
+    background-color: $basic-gold;
+  }
+}
+
+.bars{
+  margin-top: 30px;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 10px;
+  padding: 0 20px;
+  p{
+    font-size:$small-font;
+    font-weight: bold;
+  }
+
+  span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 80%;
+      height: 80%;
+      background-color: $basic-gold;
+      top: 5px;
+      left: 1px;
+      transform: translateY(-50%);
+      border-radius: 10px;
+    }
+  }
+}
+
+.follow {
+  h1{
+    margin-top: 30px;
+    padding-left: 15px;
+    font-size: $big-font;
+    font-weight: normal;
+    background-color: $basic-gold;
+  }
+
+  h4{
+    font-size: $small-font;
+    margin: 10px 0;
+  }
+
+  p{
+    font-size: $small-font;
+    padding-left: 24px;
+  }
+}
+
+.right-area{
+  width:70%;
+  padding:50px;
+  background-color: white;
+
+  h1{
+    font-size: $big-font;
+    font-weight: normal;
+  }
+  h1 span{
+    margin-right: 30px;
+    font-size: 50px;
+    color:lightgray;
+  }
+
+   p{
+    @include font-add;
+    text-align: justify;
+    word-break: break-all;
+    font-size: $small-font;
+    color:gray;
+    margin-top: 10px;
+  }
+}
+
+.work .work-group{
+  position: relative;
+}
+
+.work-group{
+   margin: 20px 0;
+
+  h3{
+    @include font-add;
+    font-size: $medium-font;
+  }
+
+  h4{
+    @include font-add;
+    font-size: $small-font;
+    color: $basic-gold;
+  }
+
+  span{
+    position: absolute;
+    top:10px;
+    right: 0;
+    color: black;
+    font-weight: normal;
+    font-size: $small-font;
+  }
+}
+
+.education .edu-group{
+  position: relative;
+}
+
+.edu-group{
+   margin: 20px 0;
+
+  h3{
+    @include font-add;
+    font-size: $medium-font;
+  }
+
+  h4{
+    @include font-add;
+    font-size: $small-font;
+    color: $basic-gold;
+  }
+
+  span{
+    position: absolute;
+    top:10px;
+    right: 0;
+    color: black;
+    font-weight: normal;
+    font-size: $small-font;
+  }
+}

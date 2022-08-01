@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-wrapper {
+  background: url("/img/background.jpg");
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.print-area {
+  width: 80%;
+  margin: 20px auto;
+}
+.print-area .header {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(41, 41, 39);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  border: 3px solid rgb(191, 150, 71);
+  box-shadow: 3px 3px 10px gray;
+  cursor: pointer;
+  user-select: none;
+  filter: grayscale(100%);
+}
+.header img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-text {
+  color: rgb(191, 150, 71);
+  width: 60%;
+  margin-left: auto;
+}
+.header-text h1 {
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+}
+.header-text p {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-area {
+  width: 30%;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.left-area i {
+  color: rgb(191, 150, 71);
+}
+.left-area .contact {
+  margin-top: 130px;
+  padding: 0 30px;
+}
+
+.contact h4 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 20px 0;
+  padding-left: 15px;
+  background-color: rgb(191, 150, 71);
+}
+.contact h5 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.contact p {
+  font-size: 18px;
+  padding-left: 24px;
+}
+
+.skills {
+  margin-top: 30px;
+  padding: 0 30px;
+}
+.skills h1 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 20px 0;
+  padding-left: 15px;
+  background-color: rgb(191, 150, 71);
+}
+
+.bars {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 10px;
+  padding: 0 20px;
+}
+.bars p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.bars span {
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.bars span:before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 80%;
+  background-color: rgb(191, 150, 71);
+  top: 5px;
+  left: 1px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+}
+
+.follow h1 {
+  margin-top: 30px;
+  padding-left: 15px;
+  font-size: 30px;
+  font-weight: normal;
+  background-color: rgb(191, 150, 71);
+}
+.follow h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.follow p {
+  font-size: 18px;
+  padding-left: 24px;
+}
+
+.right-area {
+  width: 70%;
+  padding: 50px;
+  background-color: white;
+}
+.right-area h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+.right-area h1 span {
+  margin-right: 30px;
+  font-size: 50px;
+  color: lightgray;
+}
+.right-area p {
+  padding-left: 70px;
+  font-weight: normal;
+  text-align: justify;
+  word-break: break-all;
+  font-size: 18px;
+  color: gray;
+  margin-top: 10px;
+}
+
+.work .work-group {
+  position: relative;
+}
+
+.work-group {
+  margin: 20px 0;
+}
+.work-group h3 {
+  padding-left: 70px;
+  font-weight: normal;
+  font-size: 22px;
+}
+.work-group h4 {
+  padding-left: 70px;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgb(191, 150, 71);
+}
+.work-group span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: black;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.education .edu-group {
+  position: relative;
+}
+
+.edu-group {
+  margin: 20px 0;
+}
+.edu-group h3 {
+  padding-left: 70px;
+  font-weight: normal;
+  font-size: 22px;
+}
+.edu-group h4 {
+  padding-left: 70px;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgb(191, 150, 71);
+}
+.edu-group span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: black;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */
